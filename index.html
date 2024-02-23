@@ -4,8 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #212529;
+        }
+        div{
+            background-color: rgb(160, 168, 177);
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            padding: 80px;
+            border-radius: 15px;
+            color: black;
+        }
+        input{ 
+            padding: 15px;
+            border: none;
+            outline: none;
+        }
+        button{
+            background-color: rgb(9, 44, 83);
+            border: none;
+            padding: 15px;
+            width: 100%;
+            border-radius: 10px;
+            color: white;
+        }
+        button:hover{
+            background-color: #212529;
+        }
+    </style>
 </head>
 <body>
-    juice
+    <div>
+        <h1>Login</h1>
+        <input type="text" placeholder="Nome">
+        <box-icon type='solid' name='user'></box-icon>
+        <br><br>
+        <input type="password" placeholder="Senha">
+        <box-icon type='solid' name='lock-alt'></box-icon>
+        <br><br>
+        <button>Entrar</button>
+    </div>
 </body>
 </html>
