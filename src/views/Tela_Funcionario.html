@@ -3,48 +3,69 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Task Management Board</title>
-<!-- <script src="https://cdn.tailwindcss.com%22%3E/</script> -->
-<!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> -->
+<title>Tarefas</title>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="..\..\public\styles.css"/>
 </head>
-<body>
-  <div class="grid-cols-3">
-    <div class="col-span-1">
-      <h2 >Para Fazer</h2>
-      <div class="card-task-list">
-        <p>Tarefa 1</p>
-        <p>Tarefa 2</p>
-        <p>Tarefa 1</p>
-        <p>Tarefa 2</p>
-        <p>Tarefa 1</p>
-        <p>Tarefa 2</p>
-        <p>Tarefa 1</p>
-        <p>Tarefa 2</p>
-        <p>Tarefa 1</p>
-        <p>Tarefa 2</p>
-        <p>Tarefa 1</p>
-        <p>Tarefa 2</p>
-      </div>
-    </div>
-    <div class="col-span-1">
-      <h2 >Em Andamento</h2>
-      <div class="card-task-list">
-        <p>Tarefa 3</p>
-      </div>
-    </div>
-    <div class="col-span-1">
-      <h2 >Concluído</h2>
-       <div class="card-task-list">
-        <p>Tarefa 4</p>
-        <p>Tarefa 1</p>
-        <p>Tarefa 2</p>
-      </div>
-    </div>
+<body class="background">
+<div class="min-height-screen">
+  <div class="logo">
+    <img src="..\..\public\img\logo.jpg" alt="Menu">
   </div>
+  <header class="menu-bar">
+    <nav>
+      <a href="#home" class="menu-item">Home</a>
+      <a href="#cadastro" class="menu-item">Cadastrar</a>
+      <a href="#listar" class="menu-item">Listar</a>
+      <a href="#editar" class="menu-item">Editar</a>
+      <a href="#remover" class="menu-item">Remover</a>
+      <a href="#sair" class="menu-item">Sair</a>
+    </nav>
+  </header>
 
-<script>
-  // Any additional JavaScript can be written here
-</script>
+  <main class="flex">
+    <section class="kanban-column">
+      <h2 class="mb-4 font-semibold">PARA FAZER</h2>
+      <ul>
+        <li class="mb-2">1. TAREFA</li>
+        <li class="mb-2">2. TAREFA</li>
+        <li class="mb-2">3. TAREFA</li>
+        <li class="mb-2">4. TAREFA</li>
+        <li class="mb-2">5. TAREFA</li>
+        <li class="mb-2">6. TAREFA</li>
+        <li class="mb-2">7. TAREFA</li>
+      </ul>
+    </section>
+
+    <section class="kanban-column">
+      <h2 class="mb-4 font-semibold">EM ANDAMENTO</h2>
+      <ul>
+        <li class="mb-2">1. TAREFA</li>
+        <li class="mb-2">2. TAREFA</li>
+        <li class="mb-2">3. TAREFA</li>
+        <li class="mb-2">4. TAREFA</li>
+        <li class="mb-2">5. TAREFA</li>
+        <li class="mb-2">6. TAREFA</li>
+        <li class="mb-2">7. TAREFA</li>
+      </ul>
+    </section>
+
+    <section class="kanban-column">
+      <h2 class="mb-4 font-semibold">CONCLUÍDO</h2>
+      <ul>
+        <li class="mb-2">1. TAREFA</li>
+        <li class="mb-2">2. TAREFA</li>
+        <li class="mb-2">3. TAREFA</li>
+        <li class="mb-2">4. TAREFA</li>
+        <li class="mb-2">5. TAREFA</li>
+        <li class="mb-2">6. TAREFA</li>
+        <li class="mb-2">7. TAREFA</li>
+      </ul>
+    </section>
+  </main>
+</div>
+<footer>
+  <p>Copyright © 2024 Tarefas</p>
+</footer>
 </body>
 </html>
