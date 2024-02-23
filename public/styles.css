@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container-login{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("img/background-home-16_9.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+ }
+.container-login .login-box{
+    background-color: rgba(41, 41, 41, 0.5);
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding: 80px;
+    border-radius: 15px;
+    color: rgb(252, 251, 251);
+}
+
+
+.container-login input{ 
+    padding: 15px;
+    border: none;
+    outline: none;
+}
+.container-login button{
+    background-color: rgb(9, 44, 83);
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+}
+.container-login button:hover{
+    background-color: #212529;
+}
+.card {
+    transition: box-shadow 0.3s;
+    border-radius: 0.5rem;
+}
+.card:hover {
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+.task-list {
+    min-height: 300px;
+}
+
+.grid-cols-3{
+  display: flex;
+  justify-content: center;
+}
+
+.grid-cols-3 h2{
+    font-style: bold;
+    padding-top: 40px;
+}
+
+.grid-cols-3 .card-task-list{
+    background-color: red;
+    justify-content: space-around;
+    width: 300px;
+    height: 350px;
+    border: 2px solid black;
+    overflow-y: scroll;
+}
+
+.grid-cols-3 .col-span-1 .card-task-list p{
+    font-style: italic;
+}
